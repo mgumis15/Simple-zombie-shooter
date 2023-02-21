@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="board">
+        <p id="lives">&#10084;&#10084;&#10084;</p>
+        <h1>00000</h1>
+        <h2></h2>
+        <div class="cursor"></div>
+    </div>
+    <div class="modal">
+        <div class="startModal modalContent ">
+            <h1>
+                Apokalypsa Zombie
+            </h1>
+            <form name="form">
+                <label for="nick">Nick</label>
+                <input type="text" placeholder="Podaj swój nick" name="nick" id="nick"><br>
+                <input type="button" value="GRAJ!" name="startGame">
+            </form>
+        </div>
+        <div class=" endModal modalContent ">
+            <h1>
+                Ranikng
+            </h1>
+            <p>Twój wynik: <span></span></p>
+           <table>
+               <tr><th>Rank.</th><th>Nick</th><th>Wynik</th><th>Data</th></tr>
+           </table>
+           <button id="nextGame">Graj!</button>
+        </div>
+          
+    </div>
+  
+    
+</body>
+</html>

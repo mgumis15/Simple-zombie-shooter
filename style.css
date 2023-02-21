@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.board {
+  position: relative;
+  height: 100vh;
+  min-height: 800px;
+  overflow: hidden;
+  background-image: url(./images/board-bg.jpg);
+  background-size: cover;
+  cursor: none;
+}
+.board h1 {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 5px;
+  font-size: 4em;
+  position: absolute;
+  margin-top: 20px;
+  right: 5%;
+  user-select: none;
+}
+.board h2 {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 5px;
+  font-size: 4em;
+  position: absolute;
+  margin-top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  user-select: none;
+}
+.board p {
+  color: red;
+  font-size: 4em;
+  margin-top: 15px;
+  position: absolute;
+  left: 5%;
+  letter-spacing: 15px;
+  user-select: none;
+}
+.cursor {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  outline-color: rgb(255, 255, 255, 0.7);
+  outline-style: solid;
+  outline-offset: 30px;
+  outline-width: 10px;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 3;
+  pointer-events: none;
+  display: none;
+}
+.zombie {
+  height: 312px;
+  width: 200px;
+  background-image: url(./images/walkingdead.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 110%;
+}
+
+.modal {
+  top: 0%;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  min-height: 800px;
+  overflow: hidden;
+  display: block;
+  position: fixed;
+  z-index: 1;
+  background-color: rgb(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.modalContent {
+  background-color: rgb(100, 100, 100);
+  width: 50%;
+  height: 50%;
+  min-height: 500px;
+  min-width: 400px;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.modalContent h1 {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 5px;
+  font-size: 4em;
+  text-align: center;
+}
+.modalContent input[name="nick"] {
+  font-size: 2em;
+  border-radius: 10px;
+}
+.modalContent label {
+  color: white;
+  font-size: 2em;
+}
+.modalContent input[name="startGame"] {
+  font-size: 2em;
+  border-radius: 10px;
+  margin-top: 30%;
+  border: 1px solid blue;
+}
+form {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  height: 50%;
+}
+.startModal {
+  display: flex;
+}
+.endModal {
+  width: 70%;
+  height: 70%;
+  display: none;
+  min-height: 710px;
+  min-width: 440px;
+}
+
+.endModal h1 {
+  margin-bottom: 0;
+}
+.endModal table {
+  width: 80%;
+}
+.endModal tr {
+  color: white;
+  font-size: 2em;
+  margin-top: 10px;
+  height: 50px;
+}
+.endModal td {
+  color: white;
+  height: 50px;
+  text-align: center;
+}
+.endModal p {
+  vertical-align: middle;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+}
+.endModal p span {
+  letter-spacing: 2px;
+  text-align: center;
+  vertical-align: middle;
+}
+.endModal button {
+  width: 20%;
+  font-size: 2em;
+  margin-top: 0;
+  border-radius: 10%;
+  color: whitesmoke;
+  background-color: yellowgreen;
+}
